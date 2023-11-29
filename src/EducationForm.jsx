@@ -1,10 +1,36 @@
 import { useState } from "react";
 
-export default function EducationForm({
-	education,
-	educationId,
-	setEducation,
-}) {
+export default function Education({ education, setEducation }) {
+	return (
+		<>
+			<span>Education</span>
+			<button
+				type="button"
+				onClick={() =>
+					setEducation([
+						...education,
+						{
+							id: Math.random() * 1000,
+						},
+					])
+				}
+			>
+				+
+			</button>
+			<ul>
+				{education.map((edu) => (
+					<EducationForm
+						education={education}
+						educationId={edu.id}
+						setEducation={setEducation}
+					/>
+				))}
+			</ul>
+		</>
+	);
+}
+
+function EducationForm({ education, educationId, setEducation }) {
 	function handleInstitutionChange(e) {
 		setEducation(
 			education.map((edu) => {

@@ -1,8 +1,34 @@
-export default function ExperienceForm({
-	experience,
-	experienceId,
-	setExperience,
-}) {
+export default function Experience({ experience, setExperience }) {
+	return (
+		<>
+			<span>Experience</span>
+			<button
+				type="button"
+				onClick={() =>
+					setExperience([
+						...experience,
+						{
+							id: Math.random() * 1000,
+						},
+					])
+				}
+			>
+				+
+			</button>
+			<ul>
+				{experience.map((exp) => (
+					<ExperienceForm
+						experience={experience}
+						experienceId={exp.id}
+						setExperience={setExperience}
+					/>
+				))}
+			</ul>
+		</>
+	);
+}
+
+function ExperienceForm({ experience, experienceId, setExperience }) {
 	function handleInstitutionChange(e) {
 		setExperience(
 			experience.map((exp) => {

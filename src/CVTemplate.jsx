@@ -1,7 +1,7 @@
 import { useState } from "react";
 import GeneralInfoForm from "./GeneralInfoForm";
-import EducationForm from "./EducationForm";
-import ExperienceForm from "./ExperienceForm";
+import Education from "./EducationForm";
+import Experience from "./ExperienceForm";
 
 export default function CVTemplate({
 	generalInfo,
@@ -14,52 +14,8 @@ export default function CVTemplate({
 	return (
 		<div className="template">
 			<GeneralInfoForm info={generalInfo} onChange={setGeneralInfo} />
-			<span>Education</span>
-			<button
-				type="button"
-				onClick={() =>
-					setEducation([
-						...education,
-						{
-							id: Math.random() * 1000,
-						},
-					])
-				}
-			>
-				+
-			</button>
-			<ul>
-				{education.map((edu) => (
-					<EducationForm
-						education={education}
-						educationId={edu.id}
-						setEducation={setEducation}
-					/>
-				))}
-			</ul>
-			<span>Experience</span>
-			<button
-				type="button"
-				onClick={() =>
-					setExperience([
-						...experience,
-						{
-							id: Math.random() * 1000,
-						},
-					])
-				}
-			>
-				+
-			</button>
-			<ul>
-				{experience.map((exp) => (
-					<ExperienceForm
-						experience={experience}
-						experienceId={exp.id}
-						setExperience={setExperience}
-					/>
-				))}
-			</ul>
+			<Education education={education} setEducation={setEducation} />
+			<Experience experience={experience} setExperience={setExperience} />
 		</div>
 	);
 }
