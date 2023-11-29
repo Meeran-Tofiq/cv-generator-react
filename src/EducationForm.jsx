@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function EducationForm({
 	education,
-	obj,
 	educationId,
 	setEducation,
 }) {
