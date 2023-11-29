@@ -3,17 +3,14 @@ import GeneralInfoForm from "./GeneralInfoForm";
 import EducationForm from "./EducationForm";
 import ExperienceForm from "./ExperienceForm";
 
-export default function CVTemplate() {
-	const [generalInfo, setGeneralInfo] = useState({
-		firstName: "",
-		lastName: "",
-		title: "",
-		email: "",
-		phone: "",
-	});
-	const [education, setEducation] = useState([]);
-	const [experience, setExperience] = useState([]);
-
+export default function CVTemplate({
+	generalInfo,
+	setGeneralInfo,
+	education,
+	setEducation,
+	experience,
+	setExperience,
+}) {
 	return (
 		<div className="template">
 			<GeneralInfoForm info={generalInfo} onChange={setGeneralInfo} />

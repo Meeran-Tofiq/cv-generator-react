@@ -1,12 +1,12 @@
 import Header from "./Header";
-import CVTemplate from "./CVTemplate";
 import "./App.css";
+import CVGenerator from "./CVGenerator";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<CVTemplate />
+			<CVGenerator />
 		</>
 	);
 }
