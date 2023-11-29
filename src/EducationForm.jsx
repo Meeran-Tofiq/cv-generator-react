@@ -77,6 +77,10 @@ export default function EducationForm({
 					/>
 				</label>
 				<label>
+					Location:{" "}
+					<input type="text" id="location" onChange={handleLocationChange} />
+				</label>
+				<label>
 					Degree:{" "}
 					<input type="text" id="degree" onChange={handleDegreeChange} />
 				</label>
@@ -91,10 +95,6 @@ export default function EducationForm({
 				<label>
 					End Year:{" "}
 					<input type="number" id="end-year" onChange={handleEndYearChange} />
-				</label>
-				<label>
-					Location:{" "}
-					<input type="text" id="location" onChange={handleLocationChange} />
 				</label>
 			</form>
 

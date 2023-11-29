@@ -3,13 +3,7 @@ import CVTemplate from "./CVTemplate";
 import { useState } from "react";
 
 export default function CVGenerator() {
-	const [generalInfo, setGeneralInfo] = useState({
-		firstName: "",
-		lastName: "",
-		title: "",
-		email: "",
-		phone: "",
-	});
+	const [generalInfo, setGeneralInfo] = useState({});
 	const [education, setEducation] = useState([]);
 	const [experience, setExperience] = useState([]);
 

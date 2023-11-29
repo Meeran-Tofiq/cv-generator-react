@@ -14,11 +14,11 @@ function Education({ edu }) {
 	return (
 		<>
 			<h2>{edu.institution}</h2>
+			<span className="location">{edu.location}</span>
+			<span className="degree">{edu.degree}</span>
 			<span className="duration">
 				{edu.startYear} - {edu.endYear}
 			</span>
-			<span className="degree">{edu.degree}</span>
-			<span className="location">{edu.location}</span>
 		</>
 	);
 }
