@@ -1,4 +1,5 @@
 import EducationPreview from "./EducationPreview";
+import ExperiencePreview from "./ExperiencePreview";
 import GeneralPreview from "./GeneralPreview";
 
 export default function CVPreview({ generalInfo, education, experience }) {
@@ -6,6 +7,7 @@ export default function CVPreview({ generalInfo, education, experience }) {
 		<div className="preview">
 			<GeneralPreview generalInfo={generalInfo} />
 			<EducationPreview education={education} />
+			<ExperiencePreview experience={experience} />
 		</div>
 	);
 }
