@@ -1,3 +1,7 @@
 export default function Header() {
-	return <header>CV Builder</header>;
+	return (
+		<header>
+			<h1>CV Builder</h1>
+		</header>
+	);
 }
