@@ -7,8 +7,8 @@ export default function GeneralInfoForm({ info, onChange }) {
 		onChange({ ...info, lastName: e.target.value });
 	}
 
-	function handleTitleChange(e) {
-		onChange({ ...info, title: e.target.value });
+	function handleAddressChange(e) {
+		onChange({ ...info, address: e.target.value });
 	}
 
 	function handleEmailChnage(e) {
@@ -31,7 +31,8 @@ export default function GeneralInfoForm({ info, onChange }) {
 					<input type="text" id="last-name" onChange={handleLastNameChange} />
 				</label>
 				<label>
-					Title: <input type="text" id="title" onChange={handleTitleChange} />
+					Address:{" "}
+					<input type="text" id="address" onChange={handleAddressChange} />
 				</label>
 				<label>
 					Email: <input type="email" id="email" onChange={handleEmailChnage} />
