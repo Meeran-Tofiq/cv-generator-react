@@ -1,3 +1,4 @@
+import CVPreview from "./CVPreview";
 import CVTemplate from "./CVTemplate";
 import { useState } from "react";
 
@@ -21,6 +22,11 @@ export default function CVGenerator() {
 				setEducation={setEducation}
 				experience={experience}
 				setExperience={setExperience}
+			/>
+			<CVPreview
+				generalInfo={generalInfo}
+				education={education}
+				experience={experience}
 			/>
 		</main>
 	);
