@@ -4,6 +4,7 @@ export default function Experience({ experience, setExperience }) {
 			<span>Experience</span>
 			<button
 				type="button"
+				className="add"
 				onClick={() =>
 					setExperience([
 						...experience,
@@ -131,6 +132,7 @@ function ExperienceForm({ experience, experienceId, setExperience }) {
 			</form>
 
 			<button
+				className="delete"
 				onClick={() =>
 					setExperience(experience.filter((exp) => exp.id !== experienceId))
 				}

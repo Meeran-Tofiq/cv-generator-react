@@ -6,6 +6,7 @@ export default function Education({ education, setEducation }) {
 			<span>Education</span>
 			<button
 				type="button"
+				className="add"
 				onClick={() =>
 					setEducation([
 						...education,
@@ -125,6 +126,7 @@ function EducationForm({ education, educationId, setEducation }) {
 			</form>
 
 			<button
+				className="delete"
 				onClick={() =>
 					setEducation(education.filter((edu) => edu.id !== educationId))
 				}
