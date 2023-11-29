@@ -21,6 +21,7 @@ export default function GeneralInfoForm({ info, onChange }) {
 
 	return (
 		<div className="general-info">
+			<span>General Information</span>
 			<form>
 				<label>
 					First Name:{" "}

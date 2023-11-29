@@ -1,21 +1,23 @@
 export default function Experience({ experience, setExperience }) {
 	return (
-		<>
-			<span>Experience</span>
-			<button
-				type="button"
-				className="add"
-				onClick={() =>
-					setExperience([
-						...experience,
-						{
-							id: Math.random() * 1000,
-						},
-					])
-				}
-			>
-				+
-			</button>
+		<div className="experience">
+			<span>
+				Experience
+				<button
+					type="button"
+					className="add"
+					onClick={() =>
+						setExperience([
+							...experience,
+							{
+								id: Math.random() * 1000,
+							},
+						])
+					}
+				>
+					+
+				</button>
+			</span>
 			<ul>
 				{experience.map((exp) => (
 					<ExperienceForm
@@ -25,7 +27,7 @@ export default function Experience({ experience, setExperience }) {
 					/>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 }
 

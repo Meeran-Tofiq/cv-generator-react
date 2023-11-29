@@ -2,22 +2,24 @@ import { useState } from "react";
 
 export default function Education({ education, setEducation }) {
 	return (
-		<>
-			<span>Education</span>
-			<button
-				type="button"
-				className="add"
-				onClick={() =>
-					setEducation([
-						...education,
-						{
-							id: Math.random() * 1000,
-						},
-					])
-				}
-			>
-				+
-			</button>
+		<div className="education">
+			<span>
+				Education
+				<button
+					type="button"
+					className="add"
+					onClick={() =>
+						setEducation([
+							...education,
+							{
+								id: Math.random() * 1000,
+							},
+						])
+					}
+				>
+					+
+				</button>
+			</span>
 			<ul>
 				{education.map((edu) => (
 					<EducationForm
@@ -27,7 +29,7 @@ export default function Education({ education, setEducation }) {
 					/>
 				))}
 			</ul>
-		</>
+		</div>
 	);
 }
 
