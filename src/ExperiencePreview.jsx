@@ -19,6 +19,7 @@ function Experience({ exp }) {
 			</span>
 			<span className="position">{exp.position}</span>
 			<span className="location">{exp.location}</span>
+			<p className="descrption">{exp.description}</p>
 		</>
 	);
 }
