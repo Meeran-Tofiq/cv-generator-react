@@ -8,4 +8,4 @@ This project was made as an assingment for The Odin Project, specifically for th
 
 ## How to use
 
-You can click this [link](https://https://stately-axolotl-b335a5.netlify.app/) here to access the site!
+You can click this [link](https://stately-axolotl-b335a5.netlify.app/) here to access the site!
