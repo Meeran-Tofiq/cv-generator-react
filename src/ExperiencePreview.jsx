@@ -15,7 +15,7 @@ function Experience({ exp }) {
 		<>
 			<h2>{exp.institution}</h2>
 			<span className="duration">
-				{exp.startDate} - {exp.endDate}
+				{exp.startDate} - {exp.endDate || "present"}
 			</span>
 			<span className="position">{exp.position}</span>
 			<span className="location">{exp.location}</span>
