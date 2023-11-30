@@ -106,14 +106,6 @@ function EducationForm({ education, educationId, setEducation }) {
 					/>
 				</label>
 				<label>
-					Location:{" "}
-					<input type="text" id="location" onChange={handleLocationChange} />
-				</label>
-				<label>
-					Degree:{" "}
-					<input type="text" id="degree" onChange={handleDegreeChange} />
-				</label>
-				<label>
 					Start Year:{" "}
 					<input
 						type="number"
@@ -124,6 +116,14 @@ function EducationForm({ education, educationId, setEducation }) {
 				<label>
 					End Year:{" "}
 					<input type="number" id="end-year" onChange={handleEndYearChange} />
+				</label>
+				<label>
+					Location:{" "}
+					<input type="text" id="location" onChange={handleLocationChange} />
+				</label>
+				<label>
+					Degree:{" "}
+					<input type="text" id="degree" onChange={handleDegreeChange} />
 				</label>
 			</form>
 

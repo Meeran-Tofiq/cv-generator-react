@@ -123,3 +123,26 @@ input {
 	gap: 2rem;
 	align-items: center;
 }
+
+.preview .education h2 {
+	background-color: grey;
+	margin: 1rem;
+	text-align: center;
+}
+
+.preview .education ul {
+	padding: 0 1rem;
+}
+
+.preview .education li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50%;
+	padding: 0 3rem;
+}
+
+.education li h3 {
+	margin: 0;
+}
