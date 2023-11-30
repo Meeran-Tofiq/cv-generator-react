@@ -76,12 +76,29 @@ button:hover {
 li {
 	list-style: none;
 	display: flex;
+	margin-bottom: 2rem;
 }
 
-span {
+.template span {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	font-size: larger;
 	font-weight: 700;
+}
+
+form {
+	appearance: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+input {
+	appearance: none;
+	border: none;
+	background-color: rgba(80, 80, 80, 0.6);
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+	color: white;
 }
