@@ -131,6 +131,14 @@ function ExperienceForm({ experience, experienceId, setExperience }) {
 					Location:{" "}
 					<input type="text" id="location" onChange={handleLocationChange} />
 				</label>
+				<label>
+					Descriptiom:{" "}
+					<input
+						type="text"
+						id="despcription"
+						onChange={handleDescriptionChange}
+					/>
+				</label>
 			</form>
 
 			<button
