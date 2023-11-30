@@ -5,7 +5,6 @@ export default function Footer() {
 			<a href="https://github.com/Meeran-Tofiq">
 				Meeran Tofiq <i class="fa-brands fa-github" />
 			</a>
-			;
 		</footer>
 	);
 }
