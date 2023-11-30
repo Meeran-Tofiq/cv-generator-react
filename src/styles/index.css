@@ -162,3 +162,17 @@ input {
 .experience p {
 	grid-column: 1 / span 2;
 }
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+
+	color: white;
+	background-color: black;
+}
+
+footer a {
+	margin: 0 0.2rem;
+}
