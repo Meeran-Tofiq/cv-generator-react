@@ -1,11 +1,14 @@
 export default function ExperiencePreview({ experience }) {
 	return (
-		<div className="expcation-preview">
-			{experience.map((exp) => (
-				<li key={exp.key}>
-					<Experience exp={exp} />
-				</li>
-			))}
+		<div className="experience">
+			<h2>Experience</h2>
+			<ul>
+				{experience.map((exp) => (
+					<li key={exp.key}>
+						<Experience exp={exp} />
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 }
@@ -13,7 +16,7 @@ export default function ExperiencePreview({ experience }) {
 function Experience({ exp }) {
 	return (
 		<>
-			<h2>{exp.institution}</h2>
+			<h3>{exp.institution}</h3>
 			<span className="duration">
 				{exp.startDate} - {exp.endDate || "present"}
 			</span>

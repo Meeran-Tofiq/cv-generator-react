@@ -104,8 +104,9 @@ input {
 }
 
 .preview {
-	display: grid;
-	grid-template-rows: 20% 1fr 1fr;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .preview .general-info {
@@ -124,10 +125,15 @@ input {
 	align-items: center;
 }
 
-.preview .education h2 {
-	background-color: grey;
+.preview h2 {
+	background-color: rgba(180, 180, 180, 0.6);
 	margin: 1rem;
 	text-align: center;
+}
+
+.preview h3 {
+	font-size: x-large;
+	margin: 0;
 }
 
 .preview .education ul {
@@ -143,6 +149,16 @@ input {
 	padding: 0 3rem;
 }
 
-.education li h3 {
-	margin: 0;
+.experience li {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0;
+	width: 100%;
+	row-gap: 1rem;
+
+	align-items: center;
+}
+
+.experience p {
+	grid-column: 1 / span 2;
 }
