@@ -102,3 +102,24 @@ input {
 	padding: 0.25rem;
 	color: white;
 }
+
+.preview {
+	display: grid;
+	grid-template-rows: 20% 1fr 1fr;
+}
+
+.preview .general-info {
+	background-color: rgb(75, 75, 224);
+	color: white;
+
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+}
+
+.preview .general-info div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+}
